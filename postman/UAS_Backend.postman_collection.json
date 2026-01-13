@@ -1,0 +1,132 @@
+{
+  "info": {
+    "name": "UAS Backend - NestJS (Mahasiswa CRUD)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/health",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["health"]
+        }
+      }
+    },
+    {
+      "name": "Mahasiswa - Create",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "if (jsonData.data && jsonData.data.id) {",
+              "    pm.collectionVariables.set(\"id\", jsonData.data.id);",
+              "    console.log(\"Auto-set variable id: \" + jsonData.data.id);",
+              "}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nim\": \"12345\",\n  \"nama\": \"Budi\",\n  \"prodi\": \"Informatika\",\n  \"fakultas\": \"Fakultas Teknik\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["mahasiswa"]
+        }
+      }
+    },
+    {
+      "name": "Mahasiswa - Get All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["mahasiswa"]
+        }
+      }
+    },
+    {
+      "name": "Mahasiswa - Get By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["mahasiswa", "{{id}}"]
+        }
+      }
+    },
+    {
+      "name": "Mahasiswa - Update",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nama\": \"Budi Updated\",\n  \"prodi\": \"Sistem Informasi\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["mahasiswa", "{{id}}"]
+        }
+      }
+    },
+    {
+      "name": "Mahasiswa - Delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa/{{id}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["mahasiswa", "{{id}}"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "id",
+      "value": "UUID_HERE",
+      "type": "string"
+    }
+  ]
+}

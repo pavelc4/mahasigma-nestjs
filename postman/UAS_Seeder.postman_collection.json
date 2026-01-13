@@ -1,0 +1,338 @@
+{
+  "info": {
+    "name": "UAS Backend - SEEDER ",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Seed 1 - Alpha Wolf",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1001\",\n    \"nama\": \"Alpha Wolf\",\n    \"prodi\": \"Mewing Engineering\",\n    \"fakultas\": \"Sigma Sciences\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 2 - Beta Male (Not)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1002\",\n    \"nama\": \"Beta Male (Not)\",\n    \"prodi\": \"Rizzology\",\n    \"fakultas\": \"Ohio State\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 3 - Sigma Skibidi",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1003\",\n    \"nama\": \"Sigma Skibidi\",\n    \"prodi\": \"Toilet Arts\",\n    \"fakultas\": \"Skibidi\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 4 - Giga Chad",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1004\",\n    \"nama\": \"Giga Chad\",\n    \"prodi\": \"Gym Maxxing\",\n    \"fakultas\": \"Phonk\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 5 - Ohio Rizzler",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1005\",\n    \"nama\": \"Ohio Rizzler\",\n    \"prodi\": \"Grimace Shake\",\n    \"fakultas\": \"Ohio\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 6 - Patrick Bateman",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1006\",\n    \"nama\": \"Patrick Bateman\",\n    \"prodi\": \"Investment Banking\",\n    \"fakultas\": \"Sigma Males\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 7 - Thomas Shelby",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1007\",\n    \"nama\": \"Thomas Shelby\",\n    \"prodi\": \"Small Heath Strategy\",\n    \"fakultas\": \"Peaky Blinders\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 8 - Among Us Impostor",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1008\",\n    \"nama\": \"Impostor\",\n    \"prodi\": \"Sus Engineering\",\n    \"fakultas\": \"Amogus\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 9 - Fanum Tax Collector",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1009\",\n    \"nama\": \"Fanum Tax\",\n    \"prodi\": \"Food Stealing\",\n    \"fakultas\": \"Kai Cenat University\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Seed 10 - Homelander",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"nim\": \"1010\",\n    \"nama\": \"Homelander\",\n    \"prodi\": \"Milk Drinking\",\n    \"fakultas\": \"Vought International\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/mahasiswa",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "mahasiswa"
+          ]
+        }
+      }
+    }
+  ]
+}
