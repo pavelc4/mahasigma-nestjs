@@ -97,6 +97,31 @@ docker compose up -d
 
 ---
 
+## Step 3.1: Alternatif Database (XAMPP / MySQL / Laragon)
+
+Buat pengguna yang tidak mau pakai Docker dan lebih suka XAMPP/Laragon:
+
+1.  **Install Driver MySQL**:
+    ```bash
+    bun remove pg && bun add mysql2
+    ```
+2.  **Edit `src/common/database/database.module.ts`**:
+    Ubah `type: 'postgres'` menjadi `type: 'mysql'`.
+3.  **Edit `.env`** (Sesuaikan dengan Config XAMPP):
+    ```env
+    DB_HOST=localhost
+    DB_PORT=3306
+    DB_USERNAME=root
+    DB_PASSWORD=
+    DB_NAME=uas_project
+    ```
+4.  **Buat Database**: Buka phpMyAdmin, buat database baru bernama `uas_project`.
+5.  **Skip Step 3 (Docker)** dan langsung jalankan aplikasi.
+
+---
+
+---
+
 ## Step 4: Buat Struktur Folder
 
 ```bash
