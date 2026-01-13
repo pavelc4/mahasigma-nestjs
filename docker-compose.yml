@@ -3,13 +3,13 @@ services:
     image: postgres:17-alpine
     container_name: uas_postgres
     restart: always
-  environment:
+    environment:
       POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_NAME}
-  ports:
+    ports:
       - "${DB_PORT}:5432"
-  volumes:
+    volumes:
       - pg_data:/var/lib/postgresql/data
 
 volumes:
