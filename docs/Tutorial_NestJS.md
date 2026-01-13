@@ -518,9 +518,10 @@ curl http://localhost:3000/health
 
 ---
 
-## Selesai
+## Feature
 
-Backend NestJS dengan fitur:
+Backend NestJS 
+
 - Struktur Modular + Health Check
 - PostgreSQL + TypeORM
 - Full CRUD API (dengan Fakultas & Prodi)
