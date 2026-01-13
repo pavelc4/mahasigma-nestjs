@@ -1,4 +1,4 @@
-# Tutorial NestJS + Bun + PostgreSQL (Modular CRUD)
+# Tutorial NestJS + Bun + PostgreSQL 
 
 Tutorial lengkap membangun backend modular dengan NestJS, Bun, dan PostgreSQL.
 
